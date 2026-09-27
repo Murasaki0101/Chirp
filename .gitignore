@@ -1,0 +1,22 @@
+.venv/
+.env
+.env.local
+.env.development
+.env.pre
+.env.production
+.env.test
+.cache/
+build/
+dist/
+node_modules/
+__pycache__/
+*.pyc
+.DS_Store
+**/.DS_Store
+**/*.log
+*.log
+*.pid
+*.spec
+
+# Generated captures may contain message contents, IDs, OAuth URLs, or paths.
+artifacts/hackathon/work/ocr_raw.json

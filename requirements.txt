@@ -1,0 +1,6 @@
+# 核心依赖 —— 云端 Jev 模式 + 悬浮窗 UI（必装）
+PySide6>=6.6
+
+# 说明：
+# - 云端 Jev 模式只需本文件（PySide6）。Jev 走 HTTP，无重型依赖。
+# - 本地 Laya 模式请额外安装 requirements-local.txt（含 torch，较大）。

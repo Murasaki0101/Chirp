@@ -1,0 +1,9 @@
+# 本地 Laya 决策引擎（离线、免费、开源 System One 模型）
+# 仅在设置里选「本地 Laya」模式时需要。会安装 torch + transformers（较大，~1-2GB）。
+#
+#   uv pip install --python .venv/bin/python -r requirements-local.txt
+#
+# 首次运行本地模式时，会自动从 ModelScope 下载 laya-multilingual（~650M）到本地缓存，
+# 之后完全离线可用。
+laya
+modelscope

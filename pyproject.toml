@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "chirp-dingtalk"
+version = "0.1.0"
+description = "macOS desktop assistant for DingTalk unread messages"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = ["PySide6>=6.6"]
+
+[project.optional-dependencies]
+local = ["laya", "modelscope"]
+build = ["pyinstaller>=6"]
+
+[project.scripts]
+chirp = "chirp.app:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["chirp*"]
+
+[tool.setuptools.package-data]
+chirp = ["assets/*", "assets/icon.iconset/*"]
